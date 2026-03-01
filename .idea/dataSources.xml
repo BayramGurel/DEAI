@@ -1,12 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="go_sales" uuid="95148dbd-1bff-4bb2-9b4d-e3446a0e005b">
+    <data-source source="LOCAL" name="BikeToDrive_2_Fietsverkoop" uuid="60cbf104-2efc-4f93-929a-204dbfd10ecd">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Bayra\Documents\GitHub\DEAI\Week 1 - DEAI\DEAI - Pythonweek WC Dataselectie met pandas\go_sales.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bayra\Documents\GitHub\DEAI\Week 2 - DE Source Data Model Design\BikeToDrive_2_Fietsverkoop.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="BikeToDrive_1_Accessoireverkoop" uuid="d2e77b07-331e-4324-a131-d154743d9d0c">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bayra\Documents\GitHub\DEAI\Week 2 - DE Source Data Model Design\BikeToDrive_1_Accessoireverkoop.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="BikeToDrive_3_Onderhoud" uuid="06005374-8ada-442c-831e-2d7650a95e00">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bayra\Documents\GitHub\DEAI\Week 2 - DE Source Data Model Design\BikeToDrive_3_Onderhoud.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="BikeToDrive_4_Accessoire_Inkoop" uuid="d8129168-ae0b-483c-8280-d7b2b6def134">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bayra\Documents\GitHub\DEAI\Week 2 - DE Source Data Model Design\BikeToDrive_4_Accessoire_Inkoop.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="BikeToDrive_5_Fiets_Inkoop" uuid="796da6f5-1324-47a8-97ff-2c5a36ebc9a2">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bayra\Documents\GitHub\DEAI\Week 2 - DE Source Data Model Design\BikeToDrive_5_Fiets_Inkoop.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.51.1/org/xerial/sqlite-jdbc/3.51.1.0/sqlite-jdbc-3.51.1.0.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>
