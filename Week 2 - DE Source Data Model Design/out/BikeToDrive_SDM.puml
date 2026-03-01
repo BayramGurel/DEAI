@@ -1,0 +1,201 @@
+@startuml
+!define Table(x) class "x"
+package "Accessoireverkoop" {
+  class Accessoire_Verkoop {
+    + accessoire_verkoopnr : INTEGER
+    + datum : VARCHAR(10)
+    + aantal : INTEGER
+    + verkoopprijs : REAL
+    + klant : INTEGER
+    + accessoire : INTEGER
+    + monteur : INTEGER
+  }
+  class Monteur {
+    + monteurnr : INTEGER
+    + naam : TEXT
+    + woonplaats : TEXT
+    + uurloon : REAL
+    + filiaal : INTEGER
+  }
+  class Leverancier {
+    + leveranciernr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + woonplaats : TEXT
+  }
+  class Accessoire {
+    + accessoirenr : INTEGER
+    + naam : TEXT
+    + standaardprijs : REAL
+    + inkoopprijs : REAL
+    + soort : TEXT
+    + leverancier : INTEGER
+  }
+  class Filiaal {
+    + filiaalnr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + provincie : TEXT
+  }
+  class Klant {
+    + klantnr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + woonplaats : TEXT
+    + geslacht : CHAR(1)
+    + geboortedatum : VARCHAR(10)
+  }
+}
+package "Fietsverkoop" {
+  class Fiets_Verkoop {
+    + fiets_verkoopnr : INTEGER
+    + datum : VARCHAR(10)
+    + aantal : INTEGER
+    + verkoopprijs : REAL
+    + klant : INTEGER
+    + fiets : INTEGER
+    + monteur : INTEGER
+  }
+  class Fiets {
+    + fietsnr : INTEGER
+    + soort : TEXT
+    + merk : TEXT
+    + type : TEXT
+    + standaardprijs : REAL
+    + inkoopprijs : REAL
+    + kleur : TEXT
+    + fabrikant : INTEGER
+  }
+  class Monteur {
+    + monteurnr : INTEGER
+    + naam : TEXT
+    + woonplaats : TEXT
+    + uurloon : REAL
+    + filiaal : INTEGER
+  }
+  class Fabrikant {
+    + fabrikantnr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + plaats : TEXT
+  }
+  class Filiaal {
+    + filiaalnr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + provincie : TEXT
+  }
+  class Klant {
+    + klantnr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + woonplaats : TEXT
+    + geslacht : CHAR(1)
+    + geboortedatum : VARCHAR(10)
+  }
+}
+package "Onderhoud" {
+  class Onderhoud {
+    + onderhoudnr : INTEGER
+    + datum : VARCHAR(10)
+    + starttijd : VARCHAR(18)
+    + eindtijd : VARCHAR(18)
+    + fiets : INTEGER
+    + monteur : INTEGER
+  }
+  class Fiets {
+    + fietsnr : INTEGER
+    + soort : TEXT
+    + merk : TEXT
+    + type : TEXT
+    + standaardprijs : REAL
+    + inkoopprijs : REAL
+    + kleur : TEXT
+    + fabrikant : INTEGER
+  }
+  class Monteur {
+    + monteurnr : INTEGER
+    + naam : TEXT
+    + woonplaats : TEXT
+    + uurloon : REAL
+    + filiaal : INTEGER
+  }
+  class Fabrikant {
+    + fabrikantnr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + plaats : TEXT
+  }
+  class Filiaal {
+    + filiaalnr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + provincie : TEXT
+  }
+}
+package "Accessoire_Inkoop" {
+  class Accessoire_Inkoop {
+    + inkoopnr : INTEGER
+    + inkoopmaand : INTEGER
+    + inkoopjaar : INTEGER
+    + aantal : INTEGER
+    + accessoire : INTEGER
+  }
+  class Accessoire {
+    + accessoirenr : INTEGER
+    + naam : TEXT
+    + standaardprijs : REAL
+    + inkoopprijs : REAL
+    + soort : TEXT
+    + leverancier : INTEGER
+  }
+  class Leverancier {
+    + leveranciernr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + woonplaats : TEXT
+  }
+}
+package "Fiets_Inkoop" {
+  class Fiets_Inkoop {
+    + inkoopnr : INTEGER
+    + inkoopmaand : INTEGER
+    + inkoopjaar : INTEGER
+    + aantal : INTEGER
+    + fiets : INTEGER
+  }
+  class Fiets {
+    + fietsnr : INTEGER
+    + soort : TEXT
+    + merk : TEXT
+    + type : TEXT
+    + standaardprijs : REAL
+    + inkoopprijs : REAL
+    + kleur : TEXT
+    + fabrikant : INTEGER
+  }
+  class Fabrikant {
+    + fabrikantnr : INTEGER
+    + naam : TEXT
+    + adres : TEXT
+    + plaats : TEXT
+  }
+}
+Accessoire_Verkoop "1" --> "0..*" Monteur : monteur
+Accessoire_Verkoop "1" --> "0..*" Klant : klant
+Accessoire_Verkoop "1" --> "0..*" Accessoire : accessoire
+Monteur "1" --> "0..*" Filiaal : filiaal
+Accessoire "1" --> "0..*" Leverancier : leverancier
+Fiets_Verkoop "1" --> "0..*" Monteur : monteur
+Fiets_Verkoop "1" --> "0..*" Klant : klant
+Fiets_Verkoop "1" --> "0..*" Fiets : fiets
+Fiets "1" --> "0..*" Fabrikant : fabrikant
+Onderhoud "1" --> "0..*" Monteur : monteur
+Onderhoud "1" --> "0..*" Fiets : fiets
+Fiets "1" --> "0..*" Fabrikant : fabrikant
+Monteur "1" --> "0..*" Filiaal : filiaal
+Accessoire_Inkoop "1" --> "0..*" Accessoire : accessoire
+Accessoire "1" --> "0..*" Leverancier : leverancier
+Fiets_Inkoop "1" --> "0..*" Fiets : fiets
+Fiets "1" --> "0..*" Fabrikant : fabrikant
+@enduml
