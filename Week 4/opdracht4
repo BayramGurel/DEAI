@@ -1,0 +1,4 @@
+Tijdscomplexiteit: O(N + M)
+Uitleg: Hierbij is N de lengte van de eerste lijst en M de lengte van de tweede.
+We doorlopen en vergelijken de knoopjes één voor één. Elk element uit beide
+lijsten wordt precies één keer vastgepakt en gekopieerd naar de nieuwe lijst.;

@@ -1,0 +1,3 @@
+Tijdscomplexiteit: O(N) in het ergste geval.
+Uitleg: Omdat we niet direct naar een index kunnen springen, moeten we
+vanaf het begin (head) node voor node doorlopen tot we bij 'end' zijn.
