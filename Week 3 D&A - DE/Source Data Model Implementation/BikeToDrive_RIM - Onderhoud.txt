@@ -1,0 +1,57 @@
+--BikeToDrive_3_Onderhoud;
+
+CREATE TABLE Onderhoud_Fabrikant (
+	fabrikantnr INT,
+	naam VARCHAR(45),
+	adres VARCHAR(100),
+	plaats VARCHAR(45),
+
+	PRIMARY KEY(fabrikantnr)
+);
+
+CREATE TABLE Onderhoud_Fiets (
+	fietsnr INT,
+	soort VARCHAR(45),
+	merk VARCHAR(45),
+	type VARCHAR(45),
+	standaardprijs FLOAT,
+	inkoopprijs FLOAT,
+	kleur VARCHAR(20),
+	fabrikant INT NOT NULL,
+
+	PRIMARY KEY(fietsnr),
+	FOREIGN KEY(fabrikant) REFERENCES Onderhoud_Fabrikant(fabrikantnr)
+);
+
+CREATE TABLE Onderhoud_Filiaal (
+	filiaalnr INT,
+	naam VARCHAR(45),
+	adres VARCHAR(100),
+	provincie VARCHAR(20),
+
+	PRIMARY KEY(filiaalnr)
+);
+
+CREATE TABLE Onderhoud_Monteur (
+	monteurnr INT,
+	naam VARCHAR(45),
+	woonplaats VARCHAR(45),
+	uurloon FLOAT,
+	filiaal INT NOT NULL,
+
+	PRIMARY KEY(monteurnr),
+	FOREIGN KEY(filiaal) REFERENCES Onderhoud_Filiaal(filiaalnr)
+);
+
+CREATE TABLE Onderhoud (
+	onderhoudnr INT,
+	datum DATE,
+	starttijd TIME,
+	eindtijd TIME,
+	fiets INT NOT NULL,
+	monteur INT NOT NULL,
+
+	PRIMARY KEY(onderhoudnr),
+	FOREIGN KEY(fiets) REFERENCES Onderhoud_Fiets(fietsnr),
+	FOREIGN KEY(monteur) REFERENCES Onderhoud_Monteur(monteurnr)
+);

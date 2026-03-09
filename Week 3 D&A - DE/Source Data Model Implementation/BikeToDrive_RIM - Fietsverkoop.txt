@@ -1,0 +1,68 @@
+CREATE TABLE "Fabrikant" (
+	"fabrikantnr" INTEGER NOT NULL,
+	"naam" TEXT,
+	"adres" TEXT,
+	"plaats" TEXT,
+
+	PRIMARY KEY(fabrikantnr)
+);
+
+CREATE TABLE "Fiets" (
+	"fietsnr" INTEGER NOT NULL,
+	"soort" TEXT,
+	"merk" TEXT,
+	"type" TEXT,
+	"standaardprijs" REAL,
+	"inkoopprijs" REAL,
+	"kleur" TEXT,
+	"fabrikant" INTEGER NOT NULL,
+
+	PRIMARY KEY(fietsnr),
+	FOREIGN KEY("fabrikant") REFERENCES "Fabrikant"("fabrikantnr")
+);
+
+CREATE TABLE "Fiets_Verkoop" (
+	"fiets_verkoopnr" INTEGER NOT NULL,
+	"datum" VARCHAR(10),
+	"aantal" INTEGER,
+	"verkoopprijs" REAL,
+	"klant" INTEGER NOT NULL,
+	"fiets" INTEGER NOT NULL,
+	"monteur" INTEGER NOT NULL,
+
+	PRIMARY KEY(fiets_verkoopnr),
+	FOREIGN KEY("fiets") REFERENCES "Fiets"("fietsnr"),
+	FOREIGN KEY("klant") REFERENCES "Klant"("klantnr"),
+	FOREIGN KEY("monteur") REFERENCES "Monteur"("monteurnr")
+);
+
+CREATE TABLE "Filiaal" (
+	"filiaalnr" INTEGER NOT NULL,
+	"naam" TEXT,
+	"adres" TEXT,
+	"provincie" TEXT,
+
+	PRIMARY KEY(filiaalnr)
+);
+
+CREATE TABLE "Klant" (
+	"klantnr" INTEGER NOT NULL,
+	"naam" TEXT,
+	"adres" TEXT,
+	"woonplaats" TEXT,
+	"geslacht" CHAR(1),
+	"geboortedatum" VARCHAR(10),
+
+	PRIMARY KEY(klantnr)
+);
+
+CREATE TABLE "Monteur" (
+	"monteurnr" INTEGER NOT NULL,
+	"naam" TEXT,
+	"woonplaats" TEXT,
+	"uurloon" REAL,
+	"filiaal" INTEGER NOT NULL,
+	
+	PRIMARY KEY(monteurnr),
+	FOREIGN KEY("filiaal") REFERENCES "Filiaal"("filiaalnr")
+);

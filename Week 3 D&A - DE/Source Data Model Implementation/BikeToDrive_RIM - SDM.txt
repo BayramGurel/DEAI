@@ -1,0 +1,256 @@
+PRAGMA foreign_keys = ON;
+
+-- =========================================================
+-- BikeToDrive_4_Accessoire_inkoop
+-- =========================================================
+
+CREATE TABLE IF NOT EXISTS Accessoire_Inkoop_Leverancier (
+    leveranciernr INTEGER NOT NULL,
+    naam          VARCHAR(45),
+    adres         VARCHAR(100),
+    woonplaats    VARCHAR(45),
+    PRIMARY KEY (leveranciernr)
+);
+
+CREATE TABLE IF NOT EXISTS Accessoire_Inkoop_Accessoire (
+    accessoirenr   INTEGER NOT NULL,
+    naam           VARCHAR(45),
+    standaardprijs REAL,
+    inkoopprijs    REAL,
+    soort          VARCHAR(45),
+    leverancier    INTEGER NOT NULL,
+    PRIMARY KEY (accessoirenr),
+    FOREIGN KEY (leverancier) REFERENCES Accessoire_Inkoop_Leverancier(leveranciernr)
+);
+
+CREATE TABLE IF NOT EXISTS Accessoire_Inkoop (
+    inkoopnr    INTEGER NOT NULL,
+    inkoopmaand INTEGER,
+    inkoopjaar  INTEGER,
+    aantal      INTEGER,
+    accessoire  INTEGER NOT NULL,
+    PRIMARY KEY (inkoopnr),
+    FOREIGN KEY (accessoire) REFERENCES Accessoire_Inkoop_Accessoire(accessoirenr)
+);
+
+-- =========================================================
+-- BikeToDrive_1_Accessoireverkoop  (prefix om dubbelingen te voorkomen)
+-- =========================================================
+
+CREATE TABLE IF NOT EXISTS Accessoireverkoop_Filiaal (
+    filiaalnr  INTEGER NOT NULL,
+    naam       TEXT,
+    adres      TEXT,
+    provincie  TEXT,
+    PRIMARY KEY (filiaalnr)
+);
+
+CREATE TABLE IF NOT EXISTS Accessoireverkoop_Klant (
+    klantnr        INTEGER NOT NULL,
+    naam           TEXT,
+    adres          TEXT,
+    woonplaats     TEXT,
+    geslacht       CHAR(1),
+    geboortedatum  VARCHAR(10),
+    PRIMARY KEY (klantnr)
+);
+
+CREATE TABLE IF NOT EXISTS Accessoireverkoop_Leverancier (
+    leveranciernr  INTEGER NOT NULL,
+    naam           TEXT,
+    adres          TEXT,
+    woonplaats     TEXT,
+    PRIMARY KEY (leveranciernr)
+);
+
+CREATE TABLE IF NOT EXISTS Accessoireverkoop_Accessoire (
+    accessoirenr    INTEGER NOT NULL,
+    naam            TEXT,
+    standaardprijs  REAL,
+    inkoopprijs     REAL,
+    soort           TEXT,
+    leverancier     INTEGER NOT NULL,
+    PRIMARY KEY (accessoirenr),
+    FOREIGN KEY (leverancier) REFERENCES Accessoireverkoop_Leverancier(leveranciernr)
+);
+
+CREATE TABLE IF NOT EXISTS Accessoireverkoop_Monteur (
+    monteurnr   INTEGER NOT NULL,
+    naam        TEXT,
+    woonplaats  TEXT,
+    uurloon     REAL,
+    filiaal     INTEGER NOT NULL,
+    PRIMARY KEY (monteurnr),
+    FOREIGN KEY (filiaal) REFERENCES Accessoireverkoop_Filiaal(filiaalnr)
+);
+
+CREATE TABLE IF NOT EXISTS Accessoireverkoop_Accessoire_Verkoop (
+    accessoire_verkoopnr  INTEGER NOT NULL,
+    datum                 VARCHAR(10),
+    aantal                INTEGER,
+    verkoopprijs          REAL,
+    klant                 INTEGER NOT NULL,
+    accessoire            INTEGER NOT NULL,
+    monteur               INTEGER NOT NULL,
+    PRIMARY KEY (accessoire_verkoopnr),
+    FOREIGN KEY (accessoire) REFERENCES Accessoireverkoop_Accessoire(accessoirenr),
+    FOREIGN KEY (klant)      REFERENCES Accessoireverkoop_Klant(klantnr),
+    FOREIGN KEY (monteur)    REFERENCES Accessoireverkoop_Monteur(monteurnr)
+);
+
+-- =========================================================
+-- BikeToDrive_3_Onderhoud
+-- =========================================================
+
+CREATE TABLE IF NOT EXISTS Onderhoud_Fabrikant (
+    fabrikantnr INTEGER NOT NULL,
+    naam        VARCHAR(45),
+    adres       VARCHAR(100),
+    plaats      VARCHAR(45),
+    PRIMARY KEY (fabrikantnr)
+);
+
+CREATE TABLE IF NOT EXISTS Onderhoud_Fiets (
+    fietsnr         INTEGER NOT NULL,
+    soort           VARCHAR(45),
+    merk            VARCHAR(45),
+    "type"          VARCHAR(45),
+    standaardprijs  REAL,
+    inkoopprijs     REAL,
+    kleur           VARCHAR(20),
+    fabrikant       INTEGER NOT NULL,
+    PRIMARY KEY (fietsnr),
+    FOREIGN KEY (fabrikant) REFERENCES Onderhoud_Fabrikant(fabrikantnr)
+);
+
+CREATE TABLE IF NOT EXISTS Onderhoud_Filiaal (
+    filiaalnr  INTEGER NOT NULL,
+    naam       VARCHAR(45),
+    adres      VARCHAR(100),
+    provincie  VARCHAR(20),
+    PRIMARY KEY (filiaalnr)
+);
+
+CREATE TABLE IF NOT EXISTS Onderhoud_Monteur (
+    monteurnr  INTEGER NOT NULL,
+    naam       VARCHAR(45),
+    woonplaats VARCHAR(45),
+    uurloon    REAL,
+    filiaal    INTEGER NOT NULL,
+    PRIMARY KEY (monteurnr),
+    FOREIGN KEY (filiaal) REFERENCES Onderhoud_Filiaal(filiaalnr)
+);
+
+CREATE TABLE IF NOT EXISTS Onderhoud (
+    onderhoudnr INTEGER NOT NULL,
+    datum       DATE,
+    starttijd   TIME,
+    eindtijd    TIME,
+    fiets       INTEGER NOT NULL,
+    monteur     INTEGER NOT NULL,
+    PRIMARY KEY (onderhoudnr),
+    FOREIGN KEY (fiets)   REFERENCES Onderhoud_Fiets(fietsnr),
+    FOREIGN KEY (monteur) REFERENCES Onderhoud_Monteur(monteurnr)
+);
+
+-- =========================================================
+-- BikeToDrive_5_Fiets_Inkoop
+-- =========================================================
+
+CREATE TABLE IF NOT EXISTS Fiets_Inkoop_Fabrikant (
+    fabrikantnr INTEGER NOT NULL,
+    naam        VARCHAR(45),
+    adres       VARCHAR(100),
+    plaats      VARCHAR(45),
+    PRIMARY KEY (fabrikantnr)
+);
+
+CREATE TABLE IF NOT EXISTS Fiets_Inkoop_Fiets (
+    fietsnr         INTEGER NOT NULL,
+    soort           VARCHAR(45),
+    merk            VARCHAR(45),
+    "type"          VARCHAR(45),
+    standaardprijs  REAL,
+    inkoopprijs     REAL,
+    kleur           VARCHAR(20),
+    fabrikant       INTEGER NOT NULL,
+    PRIMARY KEY (fietsnr),
+    FOREIGN KEY (fabrikant) REFERENCES Fiets_Inkoop_Fabrikant(fabrikantnr)
+);
+
+CREATE TABLE IF NOT EXISTS Fiets_Inkoop (
+    inkoopnr    INTEGER NOT NULL,
+    inkoopmaand INTEGER,
+    inkoopjaar  INTEGER,
+    aantal      INTEGER,
+    fiets       INTEGER NOT NULL,
+    PRIMARY KEY (inkoopnr),
+    FOREIGN KEY (fiets) REFERENCES Fiets_Inkoop_Fiets(fietsnr)
+);
+
+-- =========================================================
+-- BikeToDrive_2_Fietsverkoop  (prefix om dubbelingen te voorkomen)
+-- =========================================================
+
+CREATE TABLE IF NOT EXISTS Fietsverkoop_Filiaal (
+    filiaalnr  INTEGER NOT NULL,
+    naam       TEXT,
+    adres      TEXT,
+    provincie  TEXT,
+    PRIMARY KEY (filiaalnr)
+);
+
+CREATE TABLE IF NOT EXISTS Fietsverkoop_Klant (
+    klantnr        INTEGER NOT NULL,
+    naam           TEXT,
+    adres          TEXT,
+    woonplaats     TEXT,
+    geslacht       CHAR(1),
+    geboortedatum  VARCHAR(10),
+    PRIMARY KEY (klantnr)
+);
+
+CREATE TABLE IF NOT EXISTS Fietsverkoop_Monteur (
+    monteurnr   INTEGER NOT NULL,
+    naam        TEXT,
+    woonplaats  TEXT,
+    uurloon     REAL,
+    filiaal     INTEGER NOT NULL,
+    PRIMARY KEY (monteurnr),
+    FOREIGN KEY (filiaal) REFERENCES Fietsverkoop_Filiaal(filiaalnr)
+);
+
+CREATE TABLE IF NOT EXISTS Fietsverkoop_Fabrikant (
+    fabrikantnr INTEGER NOT NULL,
+    naam        TEXT,
+    adres       TEXT,
+    plaats      TEXT,
+    PRIMARY KEY (fabrikantnr)
+);
+
+CREATE TABLE IF NOT EXISTS Fietsverkoop_Fiets (
+    fietsnr         INTEGER NOT NULL,
+    soort           TEXT,
+    merk            TEXT,
+    "type"          TEXT,
+    standaardprijs  REAL,
+    inkoopprijs     REAL,
+    kleur           TEXT,
+    fabrikant       INTEGER NOT NULL,
+    PRIMARY KEY (fietsnr),
+    FOREIGN KEY (fabrikant) REFERENCES Fietsverkoop_Fabrikant(fabrikantnr)
+);
+
+CREATE TABLE IF NOT EXISTS Fietsverkoop_Fiets_Verkoop (
+    fiets_verkoopnr  INTEGER NOT NULL,
+    datum            VARCHAR(10),
+    aantal           INTEGER,
+    verkoopprijs     REAL,
+    klant            INTEGER NOT NULL,
+    fiets            INTEGER NOT NULL,
+    monteur          INTEGER NOT NULL,
+    PRIMARY KEY (fiets_verkoopnr),
+    FOREIGN KEY (fiets)   REFERENCES Fietsverkoop_Fiets(fietsnr),
+    FOREIGN KEY (klant)   REFERENCES Fietsverkoop_Klant(klantnr),
+    FOREIGN KEY (monteur) REFERENCES Fietsverkoop_Monteur(monteurnr)
+);

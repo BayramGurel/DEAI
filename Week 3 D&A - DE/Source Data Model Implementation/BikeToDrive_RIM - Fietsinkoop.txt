@@ -1,0 +1,35 @@
+--BikeToDrive_5_Fiets_Inkoop;
+
+CREATE TABLE Fiets_Inkoop_Fabrikant (
+	fabrikantnr INT,
+	naam VARCHAR(45),
+	adres VARCHAR(100),
+	plaats VARCHAR(45),
+
+	PRIMARY KEY(fabrikantnr)
+);
+
+CREATE TABLE Fiets_Inkoop_Fiets (
+	fietsnr INT,
+	soort VARCHAR(45),
+	merk VARCHAR(45),
+	type VARCHAR(45),
+	standaardprijs FLOAT,
+	inkoopprijs FLOAT,
+	kleur VARCHAR(20),
+	fabrikant INT NOT NULL,
+
+	PRIMARY KEY(fietsnr),
+	FOREIGN KEY(fabrikant) REFERENCES Fiets_Inkoop_Fabrikant(fabrikantnr)
+);
+
+CREATE TABLE Fiets_Inkoop (
+	inkoopnr INT,
+	inkoopmaand INT,
+	inkoopjaar INT,
+	aantal INT,
+	fiets INT NOT NULL,
+
+	PRIMARY KEY(inkoopnr),
+	FOREIGN KEY(fiets) REFERENCES Fiets_Inkoop_Fiets(fietsnr)
+);

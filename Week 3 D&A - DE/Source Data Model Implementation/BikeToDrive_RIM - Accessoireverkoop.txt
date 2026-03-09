@@ -1,0 +1,68 @@
+--BikeToDrive_1_Accessoireverkoop;
+
+CREATE TABLE "Filiaal" (
+	"filiaalnr"	INTEGER NOT NULL,
+	"naam"	TEXT,
+	"adres"	TEXT,
+	"provincie"	TEXT,
+
+	PRIMARY KEY(filiaalnr)
+)
+
+CREATE TABLE "Klant" (
+	"klantnr"	INTEGER NOT NULL,
+	"naam"	TEXT,
+	"adres"	TEXT,
+	"woonplaats"	TEXT,
+	"geslacht"	CHAR(1),
+	"geboortedatum"	VARCHAR(10),
+
+	PRIMARY KEY(klantnr)
+)
+
+CREATE TABLE "Leverancier" (
+	"leveranciernr"	INTEGER NOT NULL,
+	"naam"	TEXT,
+	"adres"	TEXT,
+	"woonplaats" TEXT,
+
+	PRIMARY KEY(leveranciernr)
+)
+
+CREATE TABLE "Accessoire" (
+	"accessoirenr"	INTEGER NOT NULL,
+	"naam"	TEXT,
+	"standaardprijs"	REAL,
+	"inkoopprijs"	REAL,
+	"soort"	TEXT,
+	"leverancier"	INTEGER NOT NULL,
+
+    PRIMARY KEY(accessoirenr),
+	FOREIGN KEY("leverancier") REFERENCES "Leverancier"("leveranciernr")
+)
+
+CREATE TABLE "Monteur" (
+	"monteurnr"	INTEGER NOT NULL,
+	"naam"	TEXT,
+	"woonplaats"	TEXT,
+	"uurloon"	REAL,
+	"filiaal"	INTEGER NOT NULL,
+
+	PRIMARY KEY(monteurnr),
+	FOREIGN KEY("filiaal") REFERENCES "Filiaal"("filiaalnr")
+)
+
+CREATE TABLE "Accessoire_Verkoop" (
+	"accessoire_verkoopnr"	INTEGER NOT NULL,
+	"datum"	VARCHAR(10),
+	"aantal"	INTEGER,
+	"verkoopprijs"	REAL,
+	"klant"	INTEGER NOT NULL,
+	"accessoire"	INTEGER NOT NULL,
+	"monteur"	INTEGER NOT NULL,
+
+	PRIMARY KEY(accessoire_verkoopnr),
+	FOREIGN KEY("accessoire") REFERENCES "Accessoire"("accessoirenr"),
+	FOREIGN KEY("klant") REFERENCES "Klant"("klantnr"),
+	FOREIGN KEY("monteur") REFERENCES "Monteur"("monteurnr")
+)

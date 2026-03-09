@@ -1,0 +1,301 @@
+2026-03-06 16:02:05.439 | INFO     | __main__:<module>:8 - ETL Proces gestart. Libraries succesvol ingeladen.
+2026-03-06 16:02:34.413 | INFO     | __main__:<module>:8 - ETL Proces gestart. Libraries succesvol ingeladen.
+2026-03-06 16:02:34.413 | INFO     | __main__:<module>:8 - ETL Proces gestart. Libraries succesvol ingeladen.
+2026-03-06 16:02:46.182 | INFO     | __main__:<module>:16 - Alle database connecties zijn succesvol opgebouwd.
+2026-03-06 16:02:46.182 | INFO     | __main__:<module>:16 - Alle database connecties zijn succesvol opgebouwd.
+2026-03-06 16:03:17.591 | INFO     | __main__:reset_sdm:2 - Start leegmaken van alle SDM tabellen (Full Refresh).
+2026-03-06 16:03:17.591 | INFO     | __main__:reset_sdm:2 - Start leegmaken van alle SDM tabellen (Full Refresh).
+2026-03-06 16:03:17.610 | INFO     | __main__:reset_sdm:24 - SDM tabellen zijn succesvol leeggemaakt.
+2026-03-06 16:03:17.610 | INFO     | __main__:reset_sdm:24 - SDM tabellen zijn succesvol leeggemaakt.
+2026-03-06 16:03:31.526 | INFO     | __main__:<module>:1 - Start van de Bulk Load voor alle 23 tabellen...
+2026-03-06 16:03:31.526 | INFO     | __main__:<module>:1 - Start van de Bulk Load voor alle 23 tabellen...
+2026-03-06 16:03:31.529 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Leverancier.
+2026-03-06 16:03:31.529 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Leverancier.
+2026-03-06 16:03:31.584 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 5 rijen bulk-geladen in Accessoireverkoop_Leverancier.
+2026-03-06 16:03:31.584 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 5 rijen bulk-geladen in Accessoireverkoop_Leverancier.
+2026-03-06 16:03:31.586 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Klant.
+2026-03-06 16:03:31.586 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Klant.
+2026-03-06 16:03:31.599 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 20 rijen bulk-geladen in Accessoireverkoop_Klant.
+2026-03-06 16:03:31.599 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 20 rijen bulk-geladen in Accessoireverkoop_Klant.
+2026-03-06 16:03:31.601 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Filiaal.
+2026-03-06 16:03:31.601 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Filiaal.
+2026-03-06 16:03:31.614 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 4 rijen bulk-geladen in Accessoireverkoop_Filiaal.
+2026-03-06 16:03:31.614 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 4 rijen bulk-geladen in Accessoireverkoop_Filiaal.
+2026-03-06 16:03:31.616 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Accessoire.
+2026-03-06 16:03:31.616 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Accessoire.
+2026-03-06 16:03:31.636 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Accessoireverkoop_Accessoire.
+2026-03-06 16:03:31.636 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Accessoireverkoop_Accessoire.
+2026-03-06 16:03:31.637 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Monteur.
+2026-03-06 16:03:31.637 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Monteur.
+2026-03-06 16:03:31.652 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Accessoireverkoop_Monteur.
+2026-03-06 16:03:31.652 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Accessoireverkoop_Monteur.
+2026-03-06 16:03:31.653 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:03:31.653 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:03:31.679 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 100 rijen bulk-geladen in Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:03:31.679 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 100 rijen bulk-geladen in Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:03:31.680 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Fabrikant.
+2026-03-06 16:03:31.680 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Fabrikant.
+2026-03-06 16:03:31.693 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Fietsverkoop_Fabrikant.
+2026-03-06 16:03:31.693 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Fietsverkoop_Fabrikant.
+2026-03-06 16:03:31.695 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Filiaal.
+2026-03-06 16:03:31.695 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Filiaal.
+2026-03-06 16:03:31.708 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 4 rijen bulk-geladen in Fietsverkoop_Filiaal.
+2026-03-06 16:03:31.708 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 4 rijen bulk-geladen in Fietsverkoop_Filiaal.
+2026-03-06 16:03:31.709 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Klant.
+2026-03-06 16:03:31.709 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Klant.
+2026-03-06 16:03:31.721 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 25 rijen bulk-geladen in Fietsverkoop_Klant.
+2026-03-06 16:03:31.721 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 25 rijen bulk-geladen in Fietsverkoop_Klant.
+2026-03-06 16:03:31.724 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Fiets.
+2026-03-06 16:03:31.724 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Fiets.
+2026-03-06 16:03:31.744 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 75 rijen bulk-geladen in Fietsverkoop_Fiets.
+2026-03-06 16:03:31.744 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 75 rijen bulk-geladen in Fietsverkoop_Fiets.
+2026-03-06 16:03:31.746 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Monteur.
+2026-03-06 16:03:31.746 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Monteur.
+2026-03-06 16:03:31.760 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Fietsverkoop_Monteur.
+2026-03-06 16:03:31.760 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Fietsverkoop_Monteur.
+2026-03-06 16:03:31.762 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:03:31.762 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:03:31.793 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 150 rijen bulk-geladen in Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:03:31.793 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 150 rijen bulk-geladen in Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:03:31.795 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud_Fabrikant.
+2026-03-06 16:03:31.795 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud_Fabrikant.
+2026-03-06 16:03:31.809 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 11 rijen bulk-geladen in Onderhoud_Fabrikant.
+2026-03-06 16:03:31.809 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 11 rijen bulk-geladen in Onderhoud_Fabrikant.
+2026-03-06 16:03:31.810 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud_Filiaal.
+2026-03-06 16:03:31.810 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud_Filiaal.
+2026-03-06 16:03:31.823 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 5 rijen bulk-geladen in Onderhoud_Filiaal.
+2026-03-06 16:03:31.823 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 5 rijen bulk-geladen in Onderhoud_Filiaal.
+2026-03-06 16:03:31.824 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud_Fiets.
+2026-03-06 16:03:31.824 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud_Fiets.
+2026-03-06 16:03:31.840 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 30 rijen bulk-geladen in Onderhoud_Fiets.
+2026-03-06 16:03:31.840 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 30 rijen bulk-geladen in Onderhoud_Fiets.
+2026-03-06 16:03:31.842 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud_Monteur.
+2026-03-06 16:03:31.842 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud_Monteur.
+2026-03-06 16:03:31.858 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 15 rijen bulk-geladen in Onderhoud_Monteur.
+2026-03-06 16:03:31.858 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 15 rijen bulk-geladen in Onderhoud_Monteur.
+2026-03-06 16:03:31.859 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud.
+2026-03-06 16:03:31.859 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Onderhoud.
+2026-03-06 16:03:31.877 | ERROR    | __main__:schema_driven_bulk_load:19 - ❌ Fout tijdens bulk load naar Onderhoud: (builtins.TypeError) SQLite Date type only accepts Python date objects as input.
+[SQL: INSERT INTO "Onderhoud" (onderhoudnr, datum, starttijd, eindtijd, fiets, monteur) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: [{'onderhoudnr': 1, 'datum': '2024-12-28', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 22, 'monteur': 14}, {'onderhoudnr': 2, 'datum': '2024-02-05', 'starttijd': '14:00:00.0000000', 'eindtijd': '15:00:00.0000000', 'fiets': 18, 'monteur': 8}, {'onderhoudnr': 3, 'datum': '2024-08-01', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 3, 'monteur': 14}, {'onderhoudnr': 4, 'datum': '2024-11-16', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 11, 'monteur': 2}, {'onderhoudnr': 5, 'datum': '2024-08-01', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 60, 'monteur': 15}, {'onderhoudnr': 6, 'datum': '2024-12-08', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 18, 'monteur': 13}, {'onderhoudnr': 7, 'datum': '2024-05-14', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 4, 'monteur': 8}, {'onderhoudnr': 8, 'datum': '2024-10-10', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 67, 'monteur': 3}, {'onderhoudnr': 9, 'datum': '2024-06-29', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 18, 'monteur': 12}, {'onderhoudnr': 10, 'datum': '2024-08-21', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 33, 'monteur': 2}, {'onderhoudnr': 11, 'datum': '2024-08-20', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 66, 'monteur': 8}, {'onderhoudnr': 12, 'datum': '2024-09-15', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 59, 'monteur': 6}, {'onderhoudnr': 13, 'datum': '2024-05-27', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 30, 'monteur': 9}, {'onderhoudnr': 14, 'datum': '2024-07-21', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 68, 'monteur': 5}, {'onderhoudnr': 15, 'datum': '2024-02-03', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 20, 'monteur': 15}, {'onderhoudnr': 16, 'datum': '2024-09-27', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 57, 'monteur': 5}, {'onderhoudnr': 17, 'datum': '2024-12-21', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 64, 'monteur': 9}, {'onderhoudnr': 18, 'datum': '2024-01-08', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 22, 'monteur': 1}, {'onderhoudnr': 19, 'datum': '2024-11-12', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 29, 'monteur': 9}, {'onderhoudnr': 20, 'datum': '2024-12-27', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 59, 'monteur': 10}, {'onderhoudnr': 21, 'datum': '2024-09-30', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 21, 'monteur': 4}, {'onderhoudnr': 22, 'datum': '2024-05-07', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 29, 'monteur': 7}, {'onderhoudnr': 23, 'datum': '2024-08-13', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 26, 'monteur': 13}, {'onderhoudnr': 24, 'datum': '2024-07-27', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 59, 'monteur': 8}, {'onderhoudnr': 25, 'datum': '2024-08-29', 'starttijd': '14:00:00.0000000', 'eindtijd': '15:00:00.0000000', 'fiets': 26, 'monteur': 7}, {'onderhoudnr': 26, 'datum': '2024-12-14', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 64, 'monteur': 8}, {'onderhoudnr': 27, 'datum': '2024-02-06', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 3, 'monteur': 5}, {'onderhoudnr': 28, 'datum': '2024-11-15', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 29, 'monteur': 10}, {'onderhoudnr': 29, 'datum': '2024-05-19', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 56, 'monteur': 12}, {'onderhoudnr': 30, 'datum': '2024-07-26', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 11, 'monteur': 5}, {'onderhoudnr': 31, 'datum': '2024-02-23', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 22, 'monteur': 12}, {'onderhoudnr': 32, 'datum': '2024-10-17', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 26, 'monteur': 10}, {'onderhoudnr': 33, 'datum': '2024-11-01', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 56, 'monteur': 8}, {'onderhoudnr': 34, 'datum': '2024-10-04', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 20, 'monteur': 5}, {'onderhoudnr': 35, 'datum': '2024-07-05', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 11, 'monteur': 14}, {'onderhoudnr': 36, 'datum': '2024-01-28', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 18, 'monteur': 12}, {'onderhoudnr': 37, 'datum': '2024-09-01', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 26, 'monteur': 14}, {'onderhoudnr': 38, 'datum': '2024-09-23', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 32, 'monteur': 5}, {'onderhoudnr': 39, 'datum': '2024-11-08', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 33, 'monteur': 12}, {'onderhoudnr': 40, 'datum': '2024-12-31', 'starttijd': '14:00:00.0000000', 'eindtijd': '15:00:00.0000000', 'fiets': 68, 'monteur': 3}, {'onderhoudnr': 41, 'datum': '2024-12-13', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 49, 'monteur': 15}, {'onderhoudnr': 42, 'datum': '2024-02-23', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 19, 'monteur': 2}, {'onderhoudnr': 43, 'datum': '2024-12-13', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 61, 'monteur': 10}, {'onderhoudnr': 44, 'datum': '2024-05-03', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 29, 'monteur': 8}, {'onderhoudnr': 45, 'datum': '2024-08-10', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 67, 'monteur': 4}, {'onderhoudnr': 46, 'datum': '2024-08-28', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 69, 'monteur': 12}, {'onderhoudnr': 47, 'datum': '2024-12-11', 'starttijd': '14:00:00.0000000', 'eindtijd': '15:00:00.0000000', 'fiets': 4, 'monteur': 6}, {'onderhoudnr': 48, 'datum': '2024-03-04', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 59, 'monteur': 11}, {'onderhoudnr': 49, 'datum': '2024-07-03', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 21, 'monteur': 6}, {'onderhoudnr': 50, 'datum': '2024-07-08', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 67, 'monteur': 15}]]
+2026-03-06 16:03:31.877 | ERROR    | __main__:schema_driven_bulk_load:19 - ❌ Fout tijdens bulk load naar Onderhoud: (builtins.TypeError) SQLite Date type only accepts Python date objects as input.
+[SQL: INSERT INTO "Onderhoud" (onderhoudnr, datum, starttijd, eindtijd, fiets, monteur) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: [{'onderhoudnr': 1, 'datum': '2024-12-28', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 22, 'monteur': 14}, {'onderhoudnr': 2, 'datum': '2024-02-05', 'starttijd': '14:00:00.0000000', 'eindtijd': '15:00:00.0000000', 'fiets': 18, 'monteur': 8}, {'onderhoudnr': 3, 'datum': '2024-08-01', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 3, 'monteur': 14}, {'onderhoudnr': 4, 'datum': '2024-11-16', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 11, 'monteur': 2}, {'onderhoudnr': 5, 'datum': '2024-08-01', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 60, 'monteur': 15}, {'onderhoudnr': 6, 'datum': '2024-12-08', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 18, 'monteur': 13}, {'onderhoudnr': 7, 'datum': '2024-05-14', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 4, 'monteur': 8}, {'onderhoudnr': 8, 'datum': '2024-10-10', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 67, 'monteur': 3}, {'onderhoudnr': 9, 'datum': '2024-06-29', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 18, 'monteur': 12}, {'onderhoudnr': 10, 'datum': '2024-08-21', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 33, 'monteur': 2}, {'onderhoudnr': 11, 'datum': '2024-08-20', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 66, 'monteur': 8}, {'onderhoudnr': 12, 'datum': '2024-09-15', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 59, 'monteur': 6}, {'onderhoudnr': 13, 'datum': '2024-05-27', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 30, 'monteur': 9}, {'onderhoudnr': 14, 'datum': '2024-07-21', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 68, 'monteur': 5}, {'onderhoudnr': 15, 'datum': '2024-02-03', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 20, 'monteur': 15}, {'onderhoudnr': 16, 'datum': '2024-09-27', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 57, 'monteur': 5}, {'onderhoudnr': 17, 'datum': '2024-12-21', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 64, 'monteur': 9}, {'onderhoudnr': 18, 'datum': '2024-01-08', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 22, 'monteur': 1}, {'onderhoudnr': 19, 'datum': '2024-11-12', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 29, 'monteur': 9}, {'onderhoudnr': 20, 'datum': '2024-12-27', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 59, 'monteur': 10}, {'onderhoudnr': 21, 'datum': '2024-09-30', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 21, 'monteur': 4}, {'onderhoudnr': 22, 'datum': '2024-05-07', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 29, 'monteur': 7}, {'onderhoudnr': 23, 'datum': '2024-08-13', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 26, 'monteur': 13}, {'onderhoudnr': 24, 'datum': '2024-07-27', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 59, 'monteur': 8}, {'onderhoudnr': 25, 'datum': '2024-08-29', 'starttijd': '14:00:00.0000000', 'eindtijd': '15:00:00.0000000', 'fiets': 26, 'monteur': 7}, {'onderhoudnr': 26, 'datum': '2024-12-14', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 64, 'monteur': 8}, {'onderhoudnr': 27, 'datum': '2024-02-06', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 3, 'monteur': 5}, {'onderhoudnr': 28, 'datum': '2024-11-15', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 29, 'monteur': 10}, {'onderhoudnr': 29, 'datum': '2024-05-19', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 56, 'monteur': 12}, {'onderhoudnr': 30, 'datum': '2024-07-26', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 11, 'monteur': 5}, {'onderhoudnr': 31, 'datum': '2024-02-23', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 22, 'monteur': 12}, {'onderhoudnr': 32, 'datum': '2024-10-17', 'starttijd': '10:00:00.0000000', 'eindtijd': '11:00:00.0000000', 'fiets': 26, 'monteur': 10}, {'onderhoudnr': 33, 'datum': '2024-11-01', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 56, 'monteur': 8}, {'onderhoudnr': 34, 'datum': '2024-10-04', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 20, 'monteur': 5}, {'onderhoudnr': 35, 'datum': '2024-07-05', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 11, 'monteur': 14}, {'onderhoudnr': 36, 'datum': '2024-01-28', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 18, 'monteur': 12}, {'onderhoudnr': 37, 'datum': '2024-09-01', 'starttijd': '11:00:00.0000000', 'eindtijd': '12:00:00.0000000', 'fiets': 26, 'monteur': 14}, {'onderhoudnr': 38, 'datum': '2024-09-23', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 32, 'monteur': 5}, {'onderhoudnr': 39, 'datum': '2024-11-08', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 33, 'monteur': 12}, {'onderhoudnr': 40, 'datum': '2024-12-31', 'starttijd': '14:00:00.0000000', 'eindtijd': '15:00:00.0000000', 'fiets': 68, 'monteur': 3}, {'onderhoudnr': 41, 'datum': '2024-12-13', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 49, 'monteur': 15}, {'onderhoudnr': 42, 'datum': '2024-02-23', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 19, 'monteur': 2}, {'onderhoudnr': 43, 'datum': '2024-12-13', 'starttijd': '15:00:00.0000000', 'eindtijd': '16:00:00.0000000', 'fiets': 61, 'monteur': 10}, {'onderhoudnr': 44, 'datum': '2024-05-03', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 29, 'monteur': 8}, {'onderhoudnr': 45, 'datum': '2024-08-10', 'starttijd': '08:00:00.0000000', 'eindtijd': '09:00:00.0000000', 'fiets': 67, 'monteur': 4}, {'onderhoudnr': 46, 'datum': '2024-08-28', 'starttijd': '13:00:00.0000000', 'eindtijd': '14:00:00.0000000', 'fiets': 69, 'monteur': 12}, {'onderhoudnr': 47, 'datum': '2024-12-11', 'starttijd': '14:00:00.0000000', 'eindtijd': '15:00:00.0000000', 'fiets': 4, 'monteur': 6}, {'onderhoudnr': 48, 'datum': '2024-03-04', 'starttijd': '09:00:00.0000000', 'eindtijd': '10:00:00.0000000', 'fiets': 59, 'monteur': 11}, {'onderhoudnr': 49, 'datum': '2024-07-03', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 21, 'monteur': 6}, {'onderhoudnr': 50, 'datum': '2024-07-08', 'starttijd': '12:00:00.0000000', 'eindtijd': '13:00:00.0000000', 'fiets': 67, 'monteur': 15}]]
+2026-03-06 16:03:31.879 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoire_Inkoop_Leverancier.
+2026-03-06 16:03:31.879 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoire_Inkoop_Leverancier.
+2026-03-06 16:03:31.891 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 5 rijen bulk-geladen in Accessoire_Inkoop_Leverancier.
+2026-03-06 16:03:31.891 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 5 rijen bulk-geladen in Accessoire_Inkoop_Leverancier.
+2026-03-06 16:03:31.893 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoire_Inkoop_Accessoire.
+2026-03-06 16:03:31.893 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoire_Inkoop_Accessoire.
+2026-03-06 16:03:31.906 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 13 rijen bulk-geladen in Accessoire_Inkoop_Accessoire.
+2026-03-06 16:03:31.906 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 13 rijen bulk-geladen in Accessoire_Inkoop_Accessoire.
+2026-03-06 16:03:31.908 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoire_Inkoop.
+2026-03-06 16:03:31.908 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Accessoire_Inkoop.
+2026-03-06 16:03:31.925 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 50 rijen bulk-geladen in Accessoire_Inkoop.
+2026-03-06 16:03:31.925 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 50 rijen bulk-geladen in Accessoire_Inkoop.
+2026-03-06 16:03:31.926 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fiets_Inkoop_Fabrikant.
+2026-03-06 16:03:31.926 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fiets_Inkoop_Fabrikant.
+2026-03-06 16:03:31.939 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Fiets_Inkoop_Fabrikant.
+2026-03-06 16:03:31.939 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 10 rijen bulk-geladen in Fiets_Inkoop_Fabrikant.
+2026-03-06 16:03:31.941 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fiets_Inkoop_Fiets.
+2026-03-06 16:03:31.941 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fiets_Inkoop_Fiets.
+2026-03-06 16:03:31.962 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 75 rijen bulk-geladen in Fiets_Inkoop_Fiets.
+2026-03-06 16:03:31.962 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 75 rijen bulk-geladen in Fiets_Inkoop_Fiets.
+2026-03-06 16:03:31.965 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fiets_Inkoop.
+2026-03-06 16:03:31.965 | INFO     | __main__:schema_driven_bulk_load:2 - Start Schema-Driven Bulk Load naar Fiets_Inkoop.
+2026-03-06 16:03:31.983 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 100 rijen bulk-geladen in Fiets_Inkoop.
+2026-03-06 16:03:31.983 | INFO     | __main__:schema_driven_bulk_load:17 - ✅ 100 rijen bulk-geladen in Fiets_Inkoop.
+2026-03-06 16:03:31.985 | INFO     | __main__:<module>:176 - 🎉 Bulk Load voor alle bronnen afgerond!
+2026-03-06 16:03:31.985 | INFO     | __main__:<module>:176 - 🎉 Bulk Load voor alle bronnen afgerond!
+2026-03-06 16:03:58.822 | INFO     | __main__:incremental_load:2 - Start Incremental Load voor Accessoire_Inkoop_Leverancier.
+2026-03-06 16:03:58.822 | INFO     | __main__:incremental_load:2 - Start Incremental Load voor Accessoire_Inkoop_Leverancier.
+2026-03-06 16:03:58.853 | INFO     | __main__:incremental_load:12 - Geen nieuwe data gevonden voor Accessoire_Inkoop_Leverancier. Alles is up-to-date.
+2026-03-06 16:03:58.853 | INFO     | __main__:incremental_load:12 - Geen nieuwe data gevonden voor Accessoire_Inkoop_Leverancier. Alles is up-to-date.
+2026-03-06 16:04:02.437 | INFO     | __main__:incremental_load:2 - Start Incremental Load voor Accessoire_Inkoop_Leverancier.
+2026-03-06 16:04:02.437 | INFO     | __main__:incremental_load:2 - Start Incremental Load voor Accessoire_Inkoop_Leverancier.
+2026-03-06 16:04:02.454 | INFO     | __main__:incremental_load:12 - Geen nieuwe data gevonden voor Accessoire_Inkoop_Leverancier. Alles is up-to-date.
+2026-03-06 16:04:02.454 | INFO     | __main__:incremental_load:12 - Geen nieuwe data gevonden voor Accessoire_Inkoop_Leverancier. Alles is up-to-date.
+2026-03-06 16:04:07.885 | INFO     | __main__:<module>:9 - ETL proces beëindigd. Alle connecties zijn gesloten.
+2026-03-06 16:04:07.885 | INFO     | __main__:<module>:9 - ETL proces beëindigd. Alle connecties zijn gesloten.
+2026-03-06 16:08:02.643 | INFO     | __main__:<module>:9 - Stap 1: Libraries geladen.
+2026-03-06 16:08:02.643 | INFO     | __main__:<module>:9 - Stap 1: Libraries geladen.
+2026-03-06 16:08:14.440 | INFO     | __main__:<module>:16 - Stap 2: Connecties naar alle databases staan open.
+2026-03-06 16:08:14.440 | INFO     | __main__:<module>:16 - Stap 2: Connecties naar alle databases staan open.
+2026-03-06 16:08:25.054 | INFO     | __main__:reset_sdm:2 - Start Full Refresh: SDM leegmaken.
+2026-03-06 16:08:25.054 | INFO     | __main__:reset_sdm:2 - Start Full Refresh: SDM leegmaken.
+2026-03-06 16:08:25.067 | INFO     | __main__:reset_sdm:23 - SDM is weer helemaal leeg.
+2026-03-06 16:08:25.067 | INFO     | __main__:reset_sdm:23 - SDM is weer helemaal leeg.
+2026-03-06 16:08:53.566 | INFO     | __main__:<module>:1 - Start inladen data...
+2026-03-06 16:08:53.566 | INFO     | __main__:<module>:1 - Start inladen data...
+2026-03-06 16:08:53.596 | INFO     | __main__:schema_driven_bulk_load:17 - 5 rijen ingeladen in Accessoire_Inkoop_Leverancier.
+2026-03-06 16:08:53.596 | INFO     | __main__:schema_driven_bulk_load:17 - 5 rijen ingeladen in Accessoire_Inkoop_Leverancier.
+2026-03-06 16:08:53.613 | INFO     | __main__:schema_driven_bulk_load:17 - 13 rijen ingeladen in Accessoire_Inkoop_Accessoire.
+2026-03-06 16:08:53.613 | INFO     | __main__:schema_driven_bulk_load:17 - 13 rijen ingeladen in Accessoire_Inkoop_Accessoire.
+2026-03-06 16:08:53.639 | INFO     | __main__:schema_driven_bulk_load:17 - 50 rijen ingeladen in Accessoire_Inkoop.
+2026-03-06 16:08:53.639 | INFO     | __main__:schema_driven_bulk_load:17 - 50 rijen ingeladen in Accessoire_Inkoop.
+2026-03-06 16:10:59.536 | INFO     | __main__:<module>:9 - Stap 1: Libraries geladen.
+2026-03-06 16:10:59.536 | INFO     | __main__:<module>:9 - Stap 1: Libraries geladen.
+2026-03-06 16:10:59.579 | INFO     | __main__:<module>:16 - Stap 2: Connecties naar alle databases staan open.
+2026-03-06 16:10:59.579 | INFO     | __main__:<module>:16 - Stap 2: Connecties naar alle databases staan open.
+2026-03-06 16:10:59.631 | INFO     | __main__:reset_sdm:2 - Start Full Refresh: SDM leegmaken.
+2026-03-06 16:10:59.631 | INFO     | __main__:reset_sdm:2 - Start Full Refresh: SDM leegmaken.
+2026-03-06 16:10:59.642 | INFO     | __main__:reset_sdm:23 - SDM is weer helemaal leeg.
+2026-03-06 16:10:59.642 | INFO     | __main__:reset_sdm:23 - SDM is weer helemaal leeg.
+2026-03-06 16:10:59.807 | INFO     | __main__:<module>:1 - Start inladen van álle data (Bulk Load)...
+2026-03-06 16:10:59.807 | INFO     | __main__:<module>:1 - Start inladen van álle data (Bulk Load)...
+2026-03-06 16:10:59.827 | INFO     | __main__:schema_driven_bulk_load:17 - 5 rijen ingeladen in Accessoireverkoop_Leverancier.
+2026-03-06 16:10:59.827 | INFO     | __main__:schema_driven_bulk_load:17 - 5 rijen ingeladen in Accessoireverkoop_Leverancier.
+2026-03-06 16:10:59.841 | INFO     | __main__:schema_driven_bulk_load:17 - 20 rijen ingeladen in Accessoireverkoop_Klant.
+2026-03-06 16:10:59.841 | INFO     | __main__:schema_driven_bulk_load:17 - 20 rijen ingeladen in Accessoireverkoop_Klant.
+2026-03-06 16:10:59.857 | INFO     | __main__:schema_driven_bulk_load:17 - 4 rijen ingeladen in Accessoireverkoop_Filiaal.
+2026-03-06 16:10:59.857 | INFO     | __main__:schema_driven_bulk_load:17 - 4 rijen ingeladen in Accessoireverkoop_Filiaal.
+2026-03-06 16:10:59.878 | INFO     | __main__:schema_driven_bulk_load:17 - 10 rijen ingeladen in Accessoireverkoop_Accessoire.
+2026-03-06 16:10:59.878 | INFO     | __main__:schema_driven_bulk_load:17 - 10 rijen ingeladen in Accessoireverkoop_Accessoire.
+2026-03-06 16:10:59.894 | INFO     | __main__:schema_driven_bulk_load:17 - 10 rijen ingeladen in Accessoireverkoop_Monteur.
+2026-03-06 16:10:59.894 | INFO     | __main__:schema_driven_bulk_load:17 - 10 rijen ingeladen in Accessoireverkoop_Monteur.
+2026-03-06 16:10:59.935 | INFO     | __main__:schema_driven_bulk_load:17 - 100 rijen ingeladen in Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:10:59.935 | INFO     | __main__:schema_driven_bulk_load:17 - 100 rijen ingeladen in Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:10:59.947 | INFO     | __main__:schema_driven_bulk_load:17 - 10 rijen ingeladen in Fietsverkoop_Fabrikant.
+2026-03-06 16:10:59.947 | INFO     | __main__:schema_driven_bulk_load:17 - 10 rijen ingeladen in Fietsverkoop_Fabrikant.
+2026-03-06 16:10:59.960 | INFO     | __main__:schema_driven_bulk_load:17 - 4 rijen ingeladen in Fietsverkoop_Filiaal.
+2026-03-06 16:10:59.960 | INFO     | __main__:schema_driven_bulk_load:17 - 4 rijen ingeladen in Fietsverkoop_Filiaal.
+2026-03-06 16:10:59.975 | INFO     | __main__:schema_driven_bulk_load:17 - 25 rijen ingeladen in Fietsverkoop_Klant.
+2026-03-06 16:10:59.975 | INFO     | __main__:schema_driven_bulk_load:17 - 25 rijen ingeladen in Fietsverkoop_Klant.
+2026-03-06 16:10:59.993 | INFO     | __main__:schema_driven_bulk_load:17 - 75 rijen ingeladen in Fietsverkoop_Fiets.
+2026-03-06 16:10:59.993 | INFO     | __main__:schema_driven_bulk_load:17 - 75 rijen ingeladen in Fietsverkoop_Fiets.
+2026-03-06 16:11:00.009 | INFO     | __main__:schema_driven_bulk_load:17 - 10 rijen ingeladen in Fietsverkoop_Monteur.
+2026-03-06 16:11:00.009 | INFO     | __main__:schema_driven_bulk_load:17 - 10 rijen ingeladen in Fietsverkoop_Monteur.
+2026-03-06 16:11:00.043 | INFO     | __main__:schema_driven_bulk_load:17 - 150 rijen ingeladen in Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:11:00.043 | INFO     | __main__:schema_driven_bulk_load:17 - 150 rijen ingeladen in Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:11:00.055 | INFO     | __main__:schema_driven_bulk_load:17 - 11 rijen ingeladen in Onderhoud_Fabrikant.
+2026-03-06 16:11:00.055 | INFO     | __main__:schema_driven_bulk_load:17 - 11 rijen ingeladen in Onderhoud_Fabrikant.
+2026-03-06 16:11:00.066 | INFO     | __main__:schema_driven_bulk_load:17 - 5 rijen ingeladen in Onderhoud_Filiaal.
+2026-03-06 16:11:00.066 | INFO     | __main__:schema_driven_bulk_load:17 - 5 rijen ingeladen in Onderhoud_Filiaal.
+2026-03-06 16:11:00.095 | INFO     | __main__:schema_driven_bulk_load:17 - 30 rijen ingeladen in Onderhoud_Fiets.
+2026-03-06 16:11:00.095 | INFO     | __main__:schema_driven_bulk_load:17 - 30 rijen ingeladen in Onderhoud_Fiets.
+2026-03-06 16:11:00.110 | INFO     | __main__:schema_driven_bulk_load:17 - 15 rijen ingeladen in Onderhoud_Monteur.
+2026-03-06 16:11:00.110 | INFO     | __main__:schema_driven_bulk_load:17 - 15 rijen ingeladen in Onderhoud_Monteur.
+2026-03-06 16:24:43.966 | INFO     | __main__:<module>:8 - Stap 1: Libraries geladen.
+2026-03-06 16:24:43.966 | INFO     | __main__:<module>:8 - Stap 1: Libraries geladen.
+2026-03-06 16:24:49.975 | INFO     | __main__:<module>:16 - Stap 2: Connecties succesvol geopend.
+2026-03-06 16:24:49.975 | INFO     | __main__:<module>:16 - Stap 2: Connecties succesvol geopend.
+2026-03-06 16:25:02.171 | INFO     | __main__:reset_sdm:2 - Start Full Refresh: SDM leegmaken.
+2026-03-06 16:25:02.171 | INFO     | __main__:reset_sdm:2 - Start Full Refresh: SDM leegmaken.
+2026-03-06 16:25:02.182 | INFO     | __main__:reset_sdm:21 - SDM is leeg. Klaar voor nieuwe data.
+2026-03-06 16:25:02.182 | INFO     | __main__:reset_sdm:21 - SDM is leeg. Klaar voor nieuwe data.
+2026-03-06 16:25:32.055 | INFO     | __main__:<module>:1 - Start inladen van alle data...
+2026-03-06 16:25:32.055 | INFO     | __main__:<module>:1 - Start inladen van alle data...
+2026-03-06 16:25:32.071 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Accessoireverkoop_Leverancier.
+2026-03-06 16:25:32.071 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Accessoireverkoop_Leverancier.
+2026-03-06 16:25:32.100 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 20 rijen geladen in Accessoireverkoop_Klant.
+2026-03-06 16:25:32.100 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 20 rijen geladen in Accessoireverkoop_Klant.
+2026-03-06 16:25:32.114 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 4 rijen geladen in Accessoireverkoop_Filiaal.
+2026-03-06 16:25:32.114 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 4 rijen geladen in Accessoireverkoop_Filiaal.
+2026-03-06 16:25:32.130 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Accessoireverkoop_Accessoire.
+2026-03-06 16:25:32.130 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Accessoireverkoop_Accessoire.
+2026-03-06 16:25:32.144 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Accessoireverkoop_Monteur.
+2026-03-06 16:25:32.144 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Accessoireverkoop_Monteur.
+2026-03-06 16:25:32.174 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 100 rijen geladen in Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:25:32.174 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 100 rijen geladen in Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:25:32.186 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fietsverkoop_Fabrikant.
+2026-03-06 16:25:32.186 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fietsverkoop_Fabrikant.
+2026-03-06 16:25:32.201 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 4 rijen geladen in Fietsverkoop_Filiaal.
+2026-03-06 16:25:32.201 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 4 rijen geladen in Fietsverkoop_Filiaal.
+2026-03-06 16:25:32.220 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 25 rijen geladen in Fietsverkoop_Klant.
+2026-03-06 16:25:32.220 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 25 rijen geladen in Fietsverkoop_Klant.
+2026-03-06 16:25:32.239 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 75 rijen geladen in Fietsverkoop_Fiets.
+2026-03-06 16:25:32.239 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 75 rijen geladen in Fietsverkoop_Fiets.
+2026-03-06 16:25:32.257 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fietsverkoop_Monteur.
+2026-03-06 16:25:32.257 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fietsverkoop_Monteur.
+2026-03-06 16:25:32.288 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 150 rijen geladen in Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:25:32.288 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 150 rijen geladen in Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:25:32.302 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 11 rijen geladen in Onderhoud_Fabrikant.
+2026-03-06 16:25:32.302 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 11 rijen geladen in Onderhoud_Fabrikant.
+2026-03-06 16:25:32.315 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Onderhoud_Filiaal.
+2026-03-06 16:25:32.315 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Onderhoud_Filiaal.
+2026-03-06 16:25:32.330 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 30 rijen geladen in Onderhoud_Fiets.
+2026-03-06 16:25:32.330 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 30 rijen geladen in Onderhoud_Fiets.
+2026-03-06 16:25:32.344 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 15 rijen geladen in Onderhoud_Monteur.
+2026-03-06 16:25:32.344 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 15 rijen geladen in Onderhoud_Monteur.
+2026-03-06 16:25:32.374 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 50 rijen geladen in Onderhoud.
+2026-03-06 16:25:32.374 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 50 rijen geladen in Onderhoud.
+2026-03-06 16:25:32.387 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Accessoire_Inkoop_Leverancier.
+2026-03-06 16:25:32.387 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Accessoire_Inkoop_Leverancier.
+2026-03-06 16:25:32.403 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 13 rijen geladen in Accessoire_Inkoop_Accessoire.
+2026-03-06 16:25:32.403 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 13 rijen geladen in Accessoire_Inkoop_Accessoire.
+2026-03-06 16:25:32.424 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 50 rijen geladen in Accessoire_Inkoop.
+2026-03-06 16:25:32.424 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 50 rijen geladen in Accessoire_Inkoop.
+2026-03-06 16:25:32.440 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fiets_Inkoop_Fabrikant.
+2026-03-06 16:25:32.440 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fiets_Inkoop_Fabrikant.
+2026-03-06 16:25:32.459 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 75 rijen geladen in Fiets_Inkoop_Fiets.
+2026-03-06 16:25:32.459 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 75 rijen geladen in Fiets_Inkoop_Fiets.
+2026-03-06 16:25:32.478 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 100 rijen geladen in Fiets_Inkoop.
+2026-03-06 16:25:32.478 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 100 rijen geladen in Fiets_Inkoop.
+2026-03-06 16:25:32.480 | INFO     | __main__:<module>:36 - 🎉 Klaar met inladen!
+2026-03-06 16:25:32.480 | INFO     | __main__:<module>:36 - 🎉 Klaar met inladen!
+2026-03-06 16:26:01.989 | INFO     | __main__:incremental_load:11 - Geen updates voor Accessoire_Inkoop_Leverancier.
+2026-03-06 16:26:01.989 | INFO     | __main__:incremental_load:11 - Geen updates voor Accessoire_Inkoop_Leverancier.
+2026-03-06 16:26:05.782 | INFO     | __main__:<module>:9 - ETL proces afgerond, alle connecties gesloten.
+2026-03-06 16:26:05.782 | INFO     | __main__:<module>:9 - ETL proces afgerond, alle connecties gesloten.
+2026-03-06 16:26:11.976 | INFO     | __main__:<module>:8 - Stap 1: Libraries geladen.
+2026-03-06 16:26:11.976 | INFO     | __main__:<module>:8 - Stap 1: Libraries geladen.
+2026-03-06 16:26:12.026 | INFO     | __main__:<module>:16 - Stap 2: Connecties succesvol geopend.
+2026-03-06 16:26:12.026 | INFO     | __main__:<module>:16 - Stap 2: Connecties succesvol geopend.
+2026-03-06 16:26:12.059 | INFO     | __main__:reset_sdm:2 - Start Full Refresh: SDM leegmaken.
+2026-03-06 16:26:12.059 | INFO     | __main__:reset_sdm:2 - Start Full Refresh: SDM leegmaken.
+2026-03-06 16:26:12.070 | INFO     | __main__:reset_sdm:21 - SDM is leeg. Klaar voor nieuwe data.
+2026-03-06 16:26:12.070 | INFO     | __main__:reset_sdm:21 - SDM is leeg. Klaar voor nieuwe data.
+2026-03-06 16:26:12.146 | INFO     | __main__:<module>:1 - Start inladen van alle data...
+2026-03-06 16:26:12.146 | INFO     | __main__:<module>:1 - Start inladen van alle data...
+2026-03-06 16:26:12.170 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Accessoireverkoop_Leverancier.
+2026-03-06 16:26:12.170 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Accessoireverkoop_Leverancier.
+2026-03-06 16:26:12.187 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 20 rijen geladen in Accessoireverkoop_Klant.
+2026-03-06 16:26:12.187 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 20 rijen geladen in Accessoireverkoop_Klant.
+2026-03-06 16:26:12.201 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 4 rijen geladen in Accessoireverkoop_Filiaal.
+2026-03-06 16:26:12.201 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 4 rijen geladen in Accessoireverkoop_Filiaal.
+2026-03-06 16:26:12.220 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Accessoireverkoop_Accessoire.
+2026-03-06 16:26:12.220 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Accessoireverkoop_Accessoire.
+2026-03-06 16:26:12.237 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Accessoireverkoop_Monteur.
+2026-03-06 16:26:12.237 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Accessoireverkoop_Monteur.
+2026-03-06 16:26:12.274 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 100 rijen geladen in Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:26:12.274 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 100 rijen geladen in Accessoireverkoop_Accessoire_Verkoop.
+2026-03-06 16:26:12.289 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fietsverkoop_Fabrikant.
+2026-03-06 16:26:12.289 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fietsverkoop_Fabrikant.
+2026-03-06 16:26:12.303 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 4 rijen geladen in Fietsverkoop_Filiaal.
+2026-03-06 16:26:12.303 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 4 rijen geladen in Fietsverkoop_Filiaal.
+2026-03-06 16:26:12.317 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 25 rijen geladen in Fietsverkoop_Klant.
+2026-03-06 16:26:12.317 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 25 rijen geladen in Fietsverkoop_Klant.
+2026-03-06 16:26:12.333 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 75 rijen geladen in Fietsverkoop_Fiets.
+2026-03-06 16:26:12.333 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 75 rijen geladen in Fietsverkoop_Fiets.
+2026-03-06 16:26:12.349 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fietsverkoop_Monteur.
+2026-03-06 16:26:12.349 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fietsverkoop_Monteur.
+2026-03-06 16:26:12.382 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 150 rijen geladen in Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:26:12.382 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 150 rijen geladen in Fietsverkoop_Fiets_Verkoop.
+2026-03-06 16:26:12.393 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 11 rijen geladen in Onderhoud_Fabrikant.
+2026-03-06 16:26:12.393 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 11 rijen geladen in Onderhoud_Fabrikant.
+2026-03-06 16:26:12.405 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Onderhoud_Filiaal.
+2026-03-06 16:26:12.405 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Onderhoud_Filiaal.
+2026-03-06 16:26:12.421 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 30 rijen geladen in Onderhoud_Fiets.
+2026-03-06 16:26:12.421 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 30 rijen geladen in Onderhoud_Fiets.
+2026-03-06 16:26:12.435 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 15 rijen geladen in Onderhoud_Monteur.
+2026-03-06 16:26:12.435 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 15 rijen geladen in Onderhoud_Monteur.
+2026-03-06 16:26:12.471 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 50 rijen geladen in Onderhoud.
+2026-03-06 16:26:12.471 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 50 rijen geladen in Onderhoud.
+2026-03-06 16:26:12.484 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Accessoire_Inkoop_Leverancier.
+2026-03-06 16:26:12.484 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 5 rijen geladen in Accessoire_Inkoop_Leverancier.
+2026-03-06 16:26:12.499 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 13 rijen geladen in Accessoire_Inkoop_Accessoire.
+2026-03-06 16:26:12.499 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 13 rijen geladen in Accessoire_Inkoop_Accessoire.
+2026-03-06 16:26:12.515 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 50 rijen geladen in Accessoire_Inkoop.
+2026-03-06 16:26:12.515 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 50 rijen geladen in Accessoire_Inkoop.
+2026-03-06 16:26:12.526 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fiets_Inkoop_Fabrikant.
+2026-03-06 16:26:12.526 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 10 rijen geladen in Fiets_Inkoop_Fabrikant.
+2026-03-06 16:26:12.543 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 75 rijen geladen in Fiets_Inkoop_Fiets.
+2026-03-06 16:26:12.543 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 75 rijen geladen in Fiets_Inkoop_Fiets.
+2026-03-06 16:26:12.564 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 100 rijen geladen in Fiets_Inkoop.
+2026-03-06 16:26:12.564 | INFO     | __main__:schema_driven_bulk_load:23 - ✅ 100 rijen geladen in Fiets_Inkoop.
+2026-03-06 16:26:12.566 | INFO     | __main__:<module>:36 - 🎉 Klaar met inladen!
+2026-03-06 16:26:12.566 | INFO     | __main__:<module>:36 - 🎉 Klaar met inladen!
+2026-03-06 16:26:12.621 | INFO     | __main__:incremental_load:11 - Geen updates voor Accessoire_Inkoop_Leverancier.
+2026-03-06 16:26:12.621 | INFO     | __main__:incremental_load:11 - Geen updates voor Accessoire_Inkoop_Leverancier.
+2026-03-06 16:26:12.688 | INFO     | __main__:<module>:9 - ETL proces afgerond, alle connecties gesloten.
+2026-03-06 16:26:12.688 | INFO     | __main__:<module>:9 - ETL proces afgerond, alle connecties gesloten.

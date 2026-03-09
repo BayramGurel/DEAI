@@ -1,0 +1,33 @@
+--BikeToDrive_4_Accessoire_inkoop;
+
+CREATE TABLE Accessoire_Inkoop_Leverancier (
+	leveranciernr INT,
+	naam VARCHAR(45),
+	adres VARCHAR(100),
+	woonplaats VARCHAR(45),
+
+	PRIMARY KEY(leveranciernr)
+);
+
+CREATE TABLE Accessoire_Inkoop_Accessoire (
+	accessoirenr INT,
+	naam VARCHAR(45),
+	standaardprijs FLOAT,
+	inkoopprijs FLOAT,
+	soort VARCHAR(45),
+	leverancier INT NOT NULL,
+
+	PRIMARY KEY(accessoirenr),
+	FOREIGN KEY(leverancier) REFERENCES Accessoire_Inkoop_Leverancier(leveranciernr)
+);
+
+CREATE TABLE Accessoire_Inkoop (
+	inkoopnr INT,
+	inkoopmaand INT,
+	inkoopjaar INT,
+	aantal INT,
+	accessoire INT NOT NULL,
+
+	PRIMARY KEY(inkoopnr),
+	FOREIGN KEY(accessoire) REFERENCES Accessoire_Inkoop_Accessoire(accessoirenr)
+);
