@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <title>CBS Wijkclusters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.20.2/dist/maplibre-gl.css" />
+  <script src="https://unpkg.com/maplibre-gl@5.20.2/dist/maplibre-gl.js"></script>
+  <style>
+    html, body, #map { margin: 0; padding: 0; height: 100%; width: 100%; }
+    .legend {
+      position: absolute; right: 12px; bottom: 12px; background: white; padding: 10px 12px;
+      border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.15); font-family: Arial, sans-serif;
+      font-size: 13px; z-index: 10;
+    }
+    .legend-row { display: flex; align-items: center; margin-bottom: 6px; }
+    .legend-color { width: 14px; height: 14px; margin-right: 8px; border-radius: 3px; border: 1px solid #666; }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<div class="legend">
+  <strong>Clusters</strong>
+  <div class="legend-row"><span class="legend-color" style="background:#440154"></span>Cluster 0</div>
+  <div class="legend-row"><span class="legend-color" style="background:#3b528b"></span>Cluster 1</div>
+  <div class="legend-row"><span class="legend-color" style="background:#21918c"></span>Cluster 2</div>
+  <div class="legend-row"><span class="legend-color" style="background:#5ec962"></span>Cluster 3</div>
+  <div class="legend-row"><span class="legend-color" style="background:#fde725"></span>Cluster 4</div>
+  <div class="legend-row"><span class="legend-color" style="background:#ff7f0e"></span>Cluster 5</div>
+  <div class="legend-row"><span class="legend-color" style="background:#d62728"></span>Cluster 6</div>
+  <div class="legend-row"><span class="legend-color" style="background:#9467bd"></span>Cluster 7</div>
+</div>
+<script>
+  const map = new maplibregl.Map({
+    container: 'map',
+    style: {
+      version: 8,
+      sources: {
+        osm: {
+          type: 'raster',
+          tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+          tileSize: 256,
+          attribution: '© OpenStreetMap contributors'
+        }
+      },
+      layers: [{ id: 'osm', type: 'raster', source: 'osm' }]
+    },
+    center: [5.3, 52.1],
+    zoom: 7
+  });
+
+  map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+  map.on('load', async () => {
+    const response = await fetch('./wijken_clusters_2023.geojson');
+    const geojson = await response.json();
+
+    map.addSource('wijken', { type: 'geojson', data: geojson });
+
+    map.addLayer({
+      id: 'wijk-fill',
+      type: 'fill',
+      source: 'wijken',
+      paint: {
+        'fill-color': [
+          'step', ['to-number', ['coalesce', ['get', 'cluster'], -1]],
+          '#bdbdbd',
+          0, '#440154',
+          1, '#3b528b',
+          2, '#21918c',
+          3, '#5ec962',
+          4, '#fde725',
+          5, '#ff7f0e',
+          6, '#d62728',
+          7, '#9467bd'
+        ],
+        'fill-opacity': 0.65
+      }
+    });
+
+    map.addLayer({
+      id: 'wijk-outline',
+      type: 'line',
+      source: 'wijken',
+      paint: { 'line-color': '#333333', 'line-width': 0.7 }
+    });
+
+    const bounds = new maplibregl.LngLatBounds();
+    for (const feature of geojson.features) {
+      const geom = feature.geometry;
+      if (!geom) continue;
+      const coords = geom.type === 'Polygon'
+        ? geom.coordinates.flat(1)
+        : geom.type === 'MultiPolygon'
+          ? geom.coordinates.flat(2)
+          : [];
+      coords.forEach(c => bounds.extend(c));
+    }
+    if (!bounds.isEmpty()) {
+      map.fitBounds(bounds, { padding: 20 });
+    }
+
+    const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
+    map.on('mousemove', 'wijk-fill', (e) => {
+      map.getCanvas().style.cursor = 'pointer';
+      const props = e.features[0].properties;
+      const html = `
+        <strong>${props.wijknaam || props.naam || props.regio_code || 'Onbekend'}</strong><br>
+        Regio: ${props.regio_code || '-'}<br>
+        Cluster: ${props.cluster_label || props.cluster || '-'}<br>
+        Inkomen: ${props.gem_inkomen_x1000_euro ?? '-'} (x1000 euro)<br>
+        Dichtheid: ${props.bevolkingsdichtheid ?? '-'}<br>
+        Woningen: ${props.woningvoorraad ?? '-'}
+      `;
+      popup.setLngLat(e.lngLat).setHTML(html).addTo(map);
+    });
+    map.on('mouseleave', 'wijk-fill', () => {
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+    });
+  });
+</script>
+</body>
+</html>
