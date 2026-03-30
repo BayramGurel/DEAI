@@ -1,0 +1,5 @@
+Vraag: Hoe vaak kan een lijst met 'n' elementen opgeknipt worden in 2 delen?
+Antwoord: log2(n) keer (logaritme met grondtal 2).
+Uitleg: Omdat je de lijst bij elke stap halveert, deelt de grootte zich steeds door 2.
+Bij bijvoorbeeld 8 elementen ben je na 3 keer halveren (2^3 = 8) bij de basisgevallen
+van 1 element. Wiskundig druk je dit halveren van 'n' uit als log2(n).

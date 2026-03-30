@@ -1,0 +1,5 @@
+# Tijdscomplexiteit: O(N log N)
+# Uitleg: De recursie deelt de lijst op in log2(N) lagen (diepte van de boom).
+# Op elke laag worden de sublijsten weer samengevoegd met de 'merge' methode.
+# Omdat het mergen van alle elementen op één laag in totaal O(N) tijd kost,
+# is de totale rekentijd N werk maal log(N) lagen: O(N log N).
