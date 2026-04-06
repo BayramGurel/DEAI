@@ -1,0 +1,145 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE IF NOT EXISTS Dim_Product (
+    ProductKey      INTEGER PRIMARY KEY,
+    ProductNr       INTEGER NOT NULL,
+    ProductType     TEXT NOT NULL CHECK (ProductType IN ('Fiets', 'Accessoire')),
+    Naam            TEXT,
+    Merk            TEXT,
+    Soort           TEXT,
+    Type            TEXT,
+    Kleur           TEXT,
+    Standaardprijs  REAL,
+    Inkoopprijs     REAL,
+    UNIQUE (ProductType, ProductNr)
+);
+
+CREATE TABLE IF NOT EXISTS Dim_Partner (
+    PartnerKey      INTEGER PRIMARY KEY,
+    PartnerNr       INTEGER NOT NULL,
+    PartnerType     TEXT NOT NULL CHECK (PartnerType IN ('Fabrikant', 'Leverancier')),
+    Naam            TEXT,
+    Adres           TEXT,
+    Plaats          TEXT,
+    UNIQUE (PartnerType, PartnerNr)
+);
+
+CREATE TABLE IF NOT EXISTS Dim_Klant (
+    KlantKey                INTEGER PRIMARY KEY,
+    KlantNr                 INTEGER NOT NULL UNIQUE,
+    Naam                    TEXT NOT NULL,
+    Adres                   TEXT,
+    Woonplaats              TEXT,
+    Geslacht                TEXT CHECK (Geslacht IN ('M', 'V', 'X') OR Geslacht IS NULL),
+    Geboortedatum           TEXT,
+    Leeftijd                INTEGER,
+    Leeftijdscategorie      TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Dim_Monteur (
+    MonteurKey      INTEGER PRIMARY KEY,
+    MonteurNr       INTEGER NOT NULL UNIQUE,
+    Naam            TEXT NOT NULL,
+    Woonplaats      TEXT,
+    Uurloon         REAL
+);
+
+CREATE TABLE IF NOT EXISTS Dim_Filiaal (
+    FiliaalKey      INTEGER PRIMARY KEY,
+    FiliaalNr       INTEGER NOT NULL UNIQUE,
+    Naam            TEXT NOT NULL,
+    Adres           TEXT,
+    Provincie       TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Dim_Datum (
+    DatumKey        INTEGER PRIMARY KEY,
+    Datum           TEXT NOT NULL UNIQUE,
+    Dag             INTEGER NOT NULL,
+    Maand           INTEGER NOT NULL,
+    Jaar            INTEGER NOT NULL,
+    Kwartaal        INTEGER NOT NULL,
+    Weekdag         TEXT NOT NULL,
+    Seizoen         TEXT,
+    IsWeekend       INTEGER NOT NULL CHECK (IsWeekend IN (0,1))
+);
+
+CREATE TABLE IF NOT EXISTS Dim_Tijd (
+    TijdKey         INTEGER PRIMARY KEY,
+    Tijd            TEXT NOT NULL UNIQUE,
+    Uur             INTEGER NOT NULL,
+    Minuut          INTEGER NOT NULL,
+    Dagdeel         TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Fact_Inkoop (
+    InkoopKey           INTEGER PRIMARY KEY,
+    InkoopNr            INTEGER NOT NULL UNIQUE,
+    ProductKey          INTEGER NOT NULL,
+    PartnerKey          INTEGER NOT NULL,
+    DatumKey            INTEGER NOT NULL,
+    Aantal              INTEGER NOT NULL,
+    Inkoopprijs         REAL NOT NULL,
+    Inkoopbedrag        REAL NOT NULL,
+    KortingBedrag       REAL,
+    FOREIGN KEY (ProductKey) REFERENCES Dim_Product(ProductKey),
+    FOREIGN KEY (PartnerKey) REFERENCES Dim_Partner(PartnerKey),
+    FOREIGN KEY (DatumKey) REFERENCES Dim_Datum(DatumKey)
+);
+
+CREATE TABLE IF NOT EXISTS Fact_Verkoop (
+    VerkoopKey          INTEGER PRIMARY KEY,
+    VerkoopNr           INTEGER NOT NULL UNIQUE,
+    ProductKey          INTEGER NOT NULL,
+    KlantKey            INTEGER NOT NULL,
+    MonteurKey          INTEGER NOT NULL,
+    FiliaalKey          INTEGER NOT NULL,
+    DatumKey            INTEGER NOT NULL,
+    Aantal              INTEGER NOT NULL,
+    Verkoopprijs        REAL NOT NULL,
+    Omzet               REAL NOT NULL,
+    Inkoopbedrag        REAL,
+    Brutowinst          REAL,
+    FOREIGN KEY (ProductKey) REFERENCES Dim_Product(ProductKey),
+    FOREIGN KEY (KlantKey) REFERENCES Dim_Klant(KlantKey),
+    FOREIGN KEY (MonteurKey) REFERENCES Dim_Monteur(MonteurKey),
+    FOREIGN KEY (FiliaalKey) REFERENCES Dim_Filiaal(FiliaalKey),
+    FOREIGN KEY (DatumKey) REFERENCES Dim_Datum(DatumKey)
+);
+
+CREATE TABLE IF NOT EXISTS Fact_Onderhoud (
+    OnderhoudKey            INTEGER PRIMARY KEY,
+    OnderhoudNr             INTEGER NOT NULL UNIQUE,
+    ProductKey              INTEGER NOT NULL,
+    MonteurKey              INTEGER NOT NULL,
+    FiliaalKey              INTEGER NOT NULL,
+    DatumKey                INTEGER NOT NULL,
+    StartTijdKey            INTEGER NOT NULL,
+    EindTijdKey             INTEGER NOT NULL,
+    AantalOnderhoud         INTEGER NOT NULL DEFAULT 1,
+    OnderhoudsduurMin       INTEGER NOT NULL,
+    Arbeidskosten           REAL NOT NULL,
+    FOREIGN KEY (ProductKey) REFERENCES Dim_Product(ProductKey),
+    FOREIGN KEY (MonteurKey) REFERENCES Dim_Monteur(MonteurKey),
+    FOREIGN KEY (FiliaalKey) REFERENCES Dim_Filiaal(FiliaalKey),
+    FOREIGN KEY (DatumKey) REFERENCES Dim_Datum(DatumKey),
+    FOREIGN KEY (StartTijdKey) REFERENCES Dim_Tijd(TijdKey),
+    FOREIGN KEY (EindTijdKey) REFERENCES Dim_Tijd(TijdKey)
+);
+
+CREATE INDEX IF NOT EXISTS IX_Fact_Inkoop_ProductKey     ON Fact_Inkoop(ProductKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Inkoop_PartnerKey     ON Fact_Inkoop(PartnerKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Inkoop_DatumKey       ON Fact_Inkoop(DatumKey);
+
+CREATE INDEX IF NOT EXISTS IX_Fact_Verkoop_ProductKey    ON Fact_Verkoop(ProductKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Verkoop_KlantKey      ON Fact_Verkoop(KlantKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Verkoop_MonteurKey    ON Fact_Verkoop(MonteurKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Verkoop_FiliaalKey    ON Fact_Verkoop(FiliaalKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Verkoop_DatumKey      ON Fact_Verkoop(DatumKey);
+
+CREATE INDEX IF NOT EXISTS IX_Fact_Onderhoud_ProductKey  ON Fact_Onderhoud(ProductKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Onderhoud_MonteurKey  ON Fact_Onderhoud(MonteurKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Onderhoud_FiliaalKey  ON Fact_Onderhoud(FiliaalKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Onderhoud_DatumKey    ON Fact_Onderhoud(DatumKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Onderhoud_StartTijd   ON Fact_Onderhoud(StartTijdKey);
+CREATE INDEX IF NOT EXISTS IX_Fact_Onderhoud_EindTijd    ON Fact_Onderhoud(EindTijdKey);
