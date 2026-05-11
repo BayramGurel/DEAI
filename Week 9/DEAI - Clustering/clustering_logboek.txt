@@ -1,0 +1,33 @@
+INFO - Logger gestart
+INFO - Bestand succesvol ingelezen (2930 rijen, 12 kolommen)
+INFO - Gekozen top 3 features voor clustering: ['Overall Qual', 'Gr Liv Area', 'Neighborhood']
+INFO - One-hot encoding uitgevoerd: (2930, 30)
+INFO - Data geschaald met StandardScaler
+INFO - Eerste KMeans-model getraind: n_clusters=28, random_state=42, n_init=10
+INFO - Eerste model - inertia: 3434.21, silhouette: 0.7799
+INFO - Clusterverdeling: {0: 165, 1: 194, 2: 239, 3: 182, 4: 443, 5: 166, 6: 131, 7: 71, 8: 267, 9: 103, 10: 125, 11: 93, 12: 108, 13: 114, 14: 44, 15: 151, 16: 28, 17: 51, 18: 37, 19: 30, 20: 72, 21: 48, 22: 8, 23: 2, 24: 23, 25: 24, 26: 10, 27: 1}
+INFO - Elleboogmethode uitgevoerd voor k = 2 t/m 34
+INFO - Experiment 1 uitgevoerd: n_clusters=5, random_state=42, n_init=10
+INFO - Experiment 1 - features: ['Overall Qual', 'Gr Liv Area', 'Neighborhood']
+INFO - Experiment 1 - inertia: 73747.00, silhouette: 0.1597
+INFO - Experiment 2 uitgevoerd: n_clusters=4, random_state=42, n_init=10
+INFO - Experiment 2 - features: ['Overall Qual', 'Gr Liv Area', 'Total Bsmt SF', 'Neighborhood']
+INFO - Experiment 2 - inertia: 79028.12, silhouette: 0.1333
+INFO - Experiment 3 uitgevoerd: n_clusters=4, random_state=42, n_init=10
+INFO - Experiment 3 - features: ['Overall Qual', 'Gr Liv Area', 'House Style']
+INFO - Experiment 3 - inertia: 16853.19, silhouette: 0.5094
+INFO - Experiment 4 uitgevoerd: n_clusters=5, random_state=42, n_init=20
+INFO - Experiment 4 - features: ['Overall Qual', 'Gr Liv Area', 'Total Bsmt SF', 'Year Built', 'Neighborhood']
+INFO - Experiment 4 - inertia: 76814.43, silhouette: 0.1234
+INFO - Experiment 5 - alleen numerieke basisfeatures uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Total Bsmt SF'], categorische_features=[], n_clusters=3, n_init=10, schaal=Ja, inertia=4107.18, silhouette=0.2944
+INFO - Experiment 6 - meer numerieke features uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Total Bsmt SF', 'Year Built', 'Full Bath', 'Bedroom AbvGr'], categorische_features=[], n_clusters=4, n_init=10, schaal=Ja, inertia=8344.84, silhouette=0.2820
+INFO - Experiment 7 - garage wel of niet aanwezig uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Garage'], categorische_features=['Garage'], n_clusters=4, n_init=10, schaal=Ja, inertia=2193.51, silhouette=0.4062
+INFO - Experiment 8 - wijk en garage gecombineerd uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Neighborhood', 'Garage'], categorische_features=['Neighborhood', 'Garage'], n_clusters=6, n_init=10, schaal=Ja, inertia=73752.77, silhouette=0.1969
+INFO - Experiment 9 - prijssegmenten met SalePrice uitgevoerd: features=['SalePrice', 'Overall Qual', 'Gr Liv Area', 'Neighborhood'], categorische_features=['Neighborhood'], n_clusters=5, n_init=10, schaal=Ja, inertia=75127.09, silhouette=0.1298
+INFO - Experiment 10 - zonder StandardScaler uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Total Bsmt SF', 'Lot Area'], categorische_features=[], n_clusters=5, n_init=10, schaal=Nee, inertia=19868966055.60, silhouette=0.4889
+INFO - Experiment 11 - basisfeatures met 8 clusters uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Neighborhood'], categorische_features=['Neighborhood'], n_clusters=8, n_init=10, schaal=Ja, inertia=64488.20, silhouette=0.2476
+INFO - Experiment 12 - uitgebreide features met 3 clusters uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Total Bsmt SF', 'Year Built', 'Neighborhood'], categorische_features=['Neighborhood'], n_clusters=3, n_init=20, schaal=Ja, inertia=83320.07, silhouette=0.1131
+INFO - Experiment 13 - met Lot Area uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Total Bsmt SF', 'Lot Area', 'Neighborhood'], categorische_features=['Neighborhood'], n_clusters=5, n_init=20, schaal=Ja, inertia=78571.22, silhouette=0.0973
+INFO - Experiment 14 - huisstijl garage en kamers uitgevoerd: features=['Overall Qual', 'Gr Liv Area', 'Full Bath', 'Bedroom AbvGr', 'House Style', 'Garage'], categorische_features=['House Style', 'Garage'], n_clusters=5, n_init=20, schaal=Ja, inertia=22535.58, silhouette=0.3639
+INFO - Beste experiment: Initiële run (silhouette score = 0.7799, n_clusters = 28)
+INFO - Elleboogmethode uitgevoerd voor k = 2 t/m 34
