@@ -1,0 +1,25 @@
+model,prompt,response_length,time_seconds,answer
+nvidia/nemotron-3-nano-4b,Leg in maximaal 3 zinnen uit wat een lokale LLM is.,437,5.59,"
+Een lokale LLM (Large Language Model) is een kunstmatige intelligentie‑model dat op jouw eigen computer of server werkt, zonder dat je de gegevens naar een cloudprovider stuurden. Het kan teksten genereren, informeren of taakautomatiseren, maar blijft volledig offline en behoudt de privacy van de gebruikers. Door alleen data te verwerken die op je apparaat is, kan je ook controle over de beveiliging en ethische gebruikvorm uitnemen."
+nvidia/nemotron-3-nano-4b,Noem 3 voordelen van LM Studio.,436,21.43,"
+Hier zijn 3 voordelen van LM Studio:
+
+1. **Offline-bron werking** – U kunt zonder internet of cloud-diensten AI-modellen lokaal uitvoeren (privacy- en gegevensbescherming).  
+2. **Steun voor meerdere AI-modellen** – Gebruik verschillende modellen zoals Llama 2, Mistral, etc., direct op uw apparaat.  
+3. **Gebruikersvriendelijke interface** – Eenvoudige instelling en gebruik, geschikt voor alle vaardigheidsniveaus (geen code nodig)."
+nvidia/nemotron-3-nano-4b,Schrijf een korte Python-functie die twee getallen optelt.,283,4.35,"
+
+Hieronder vind je een korte Python‑functie die twee getallen optelt:
+
+```python
+def optellen(a, b):
+    """"""Voegt de twee gegeven numbers toe en retourneert het resultaat.""""""
+    return a + b
+```
+
+Gebruikvoorbeeld:
+
+```python
+resultaat = optellen(3, 7)   # → 10
+print(resultaat)
+```"
